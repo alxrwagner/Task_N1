@@ -12,7 +12,6 @@ import java.util.List;
 
 @Repository
 public interface PostRepos extends JpaRepository<Post, Long>, JpaSpecificationExecutor<Post> {
-
     List<PostProj> findProjBy(PageRequest pageRequest);
     @EntityGraph(attributePaths = {"comments", "user"})
     List<Post> findAllBy();

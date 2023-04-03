@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 @Data
 public class PostDTO {
+
     private Long id;
     private String title;
     private String body;

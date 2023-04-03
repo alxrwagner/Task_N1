@@ -11,7 +11,6 @@ import java.util.List;
 
 @Repository
 public interface CommentRepos extends JpaRepository<Comment, Long> {
-
     @Query(value = "select u.id as userId,\n" +
             "       u.name as userName,\n" +
             "       count(distinct p.*) as countPosts,\n" +
