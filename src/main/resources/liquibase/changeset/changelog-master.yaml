@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/changeset/user.yml
+  - include:
+      file: liquibase/changeset/post.yml
+  - include:
+      file: liquibase/changeset/comment.yml
