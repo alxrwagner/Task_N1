@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 public class TopUsersDTO {
+
     private Long id;
     private String userName;
     private Integer countPosts;
